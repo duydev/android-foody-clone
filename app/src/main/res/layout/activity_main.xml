@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorBackgroundMain"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/chuf"/>
+        <RadioGroup
+            android:id="@+id/rdg_place_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_background_radiogroup_main"
+            >
+            <RadioButton
+                android:id="@+id/rd_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/odau"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_odau"
+                android:textColor="@drawable/change_text_radio_main"
+                android:checked="true"
+                android:padding="10dp"/>
+            <RadioButton
+                android:id="@+id/rd_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/angi"
+                android:textColor="@drawable/change_text_radio_main"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_angi"
+                android:padding="10dp"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_add_white_24dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
